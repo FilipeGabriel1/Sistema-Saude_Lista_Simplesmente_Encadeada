@@ -18,7 +18,6 @@ public class ListaEncadeadaSimples<T> {
         this.cabeca = null;
     }
 
-    // CREATE
     public void adicionar(T dado) {
         No<T> novoNo = new No<>(dado);
         if (cabeca == null) {
@@ -32,7 +31,7 @@ public class ListaEncadeadaSimples<T> {
         }
     }
 
-    // READ (listar todos)
+   
     public List<T> listar() {
         List<T> lista = new ArrayList<>();
         No<T> atual = cabeca;
@@ -43,7 +42,7 @@ public class ListaEncadeadaSimples<T> {
         return lista;
     }
 
-    // READ (buscar por id, assumindo que T tem getId())
+  
     public T buscarPorId(int id) {
         No<T> atual = cabeca;
         while (atual != null) {
@@ -54,14 +53,13 @@ public class ListaEncadeadaSimples<T> {
                     return atual.dado;
                 }
             } catch (Exception e) {
-                // Ignora se não tiver getId
+                
             }
             atual = atual.proximo;
         }
         return null;
     }
 
-    // UPDATE (editar por id)
     public boolean editar(T dadoEditado) {
         No<T> atual = cabeca;
         try {
@@ -76,12 +74,12 @@ public class ListaEncadeadaSimples<T> {
                 atual = atual.proximo;
             }
         } catch (Exception e) {
-            // Ignora se não tiver getId
+            
         }
         return false;
     }
 
-    // DELETE (remover por id)
+   
     public boolean removerPorId(int id) {
         if (cabeca == null) return false;
         try {
@@ -100,7 +98,7 @@ public class ListaEncadeadaSimples<T> {
                 atual = atual.proximo;
             }
         } catch (Exception e) {
-            // Ignora se não tiver getId
+            
         }
         return false;
     }

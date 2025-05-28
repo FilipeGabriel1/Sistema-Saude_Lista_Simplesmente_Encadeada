@@ -4,7 +4,7 @@ public class MainExemploLista {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Classes internas
+        
         class Paciente {
             private int id;
             private String nome;
