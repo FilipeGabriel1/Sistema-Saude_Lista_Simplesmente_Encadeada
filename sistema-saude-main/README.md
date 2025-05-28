@@ -4,8 +4,8 @@ Este projeto é um sistema de gerenciamento para uma clínica de saúde, desenvo
 
 ## Autores
 
-- Maria Iasmin Clementino da Silva
 - Filipe Gabriel Dutra Meves
+- Maria Iasmin Clementino da Silva
 
 ## Funcionalidades
 
